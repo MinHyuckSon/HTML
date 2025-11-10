@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btn1(){
+            alert("h01페이지로 이동합니다.")
+            id = document.getElementById("user_id").value
+            if(id == ""){
+                alert("아이디 또는 패스워드를 입력하셔야 합니다.")
+            }else{
+                alert("id 입력된 값 :"+id)
+                frm.submit()
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <form action="h01.html" method="post" name="frm">
+        <label>아이디</label>
+        <input type="text" name="id" id="user_id"><br>
+        <label>패스워드</label>
+        <input type="text" name ="pw"><br>
+        <input type="submit" value="로그인">
+    </form>
+</body>
+</html>
