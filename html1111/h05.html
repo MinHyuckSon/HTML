@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding:0; margin:0;}
+        #banner{width:1200px; height:360px;
+          border:1px solid #979797; border-radius: 16px;
+          margin:50px auto;
+          display: flex;
+        }
+        #b01{width: 580px; height:360px;
+            border-radius: 16px;
+            background: url('/image/best.jpg');
+            background-size: cover;
+        }
+        #b02{ width: 620px; height:360px;
+             border:1px solid #979797;
+        }
+        #article{width:500px; height:222px; 
+        border:1px solid #979797; margin-left:40px;
+        margin-top:70px;
+        }
+        #article>h3{font-size:20px; font-weight: 500;}
+        #article>p{font-size:14px; font-weight:400; color:#666;
+        letter-spacing: -0.56px; margin-bottom: 12px;}
+        #article>p>span{color: #ddd;margin:0 4px;}
+        #article>h4>span{font-size: 18px;font-weight: 500;}
+        #article>div{width: 154px;height: 24px; background: #f2f2f3;
+        text-align: center; font-weight: 700; letter-spacing: -0.6px;
+        color:#ff299c; font-size: 13px; border-radius: 4px;
+        margin-top:2px 0 6px 0;}
+        #article>h5{color: #682fca; font-size: 16px; font-weight: 700;
+            margin-top: 16px;
+        }
+        #article>ul{margin-top: 8px; list-style:none; }
+        #article>ul>li{margin: 16px; color:#333; letter-spacing: -0,4px;}
+        #article>ul>li::before{
+            content:'';
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            background: #111;
+            border-radius: 100%;
+            vertical-align: middle;
+            margin: -3px 4px 0 0 ;
+        }
+        #header{width: 100%; height: 80px; background: rgb(67,71);}
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="banner">
+        <div id="b01"></div>
+        <div id="b02">
+            <div id="article"></div>
+                <h3>규슈 3,4일 #출발확정 #단풍 피크시즌 즉시출발</h3>
+                <p>인천</p>
+                <h4><span class="point">NO쇼핑NO가이드/기사경비</span></h4>
+                <div><p>📍인당 최대 10만원 즉시할인</p></div>
+                <h5></h5>
+                <ul>
+                    <li>
+                    리조트형/료칸/대욕장 등 다양한 온천호텔
+                  </li>
+                    <li>
+                    단풍명소 다자이후텐만구&amp;유후인
+                  </li>
+                    <li>
+                    라라포트/마크이즈몰 등 자유쇼핑
+                  </li>
+                </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

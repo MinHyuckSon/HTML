@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>팝업=모달창</title>
+    <style>
+        .main{width: 100%;height: 900px;
+        display: flex; justify-content: center;
+    align-items: center;}
+        .modal{width: 350px; height: 350px;
+        background: url('/image/banner2.jpg')
+        ;}
+    </style>
+     <script>
+            //함수선언
+            funtion :modal()
+            {
+                $(".modal").css("display","none");
+                
+            }
+        </script>
+</head>
+<body>
+    <div class="main">
+        <div class="modal" onclick="modal()"></div>
+        <h4>공개모집</h4>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>flex</title>
+    <style>
+        *{padding: 0; margin: 0;}
+        #main{width: 700px;height: 200px;border: 1px solid black;
+            margin: 100px;
+            background:  #eee;
+        display: flex;
+        justify-content: space-between; /*가로정렬*/
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: space-around;
+        /*
+        align-item
+        flex-start: 세로정렬에서 위쪽맞춤,flex-end:아래맞춤
+        space-between: 위쪽과 아래쪽 맞춤
+        space-around: 모든 공백제공, 위쪽,아래쪽 공백
+        center:가운데 정렬, stretch: 늘려서 채워줌, 
+        */
+        /*flex-start:첫 지점으로 배치, flex_end:끝지점으로 배치
+        center: 가운데 배치
+        space around: 모든 항복 간격배치, space-between:끝점으로 간격배치*/
+        /*flex-wrap: wrap; /*wrap: 여러줄 표시, no-wrap: 1줄 표시, wrap-reverse: 여러줄 표시 상단으로*/
+        /*flex-direction: row;/*row: 가로기준 정렬, column: 세로기준 정렬*/
+        }
+        div{width: 180px; height: 80px; border:1px solid red}
+        
+        /*order: 순서배치 바꾸기*/
+        /*.c01{order: 1;}
+        .c02{order: 4;}
+        .c03{order: 2;}
+        .c04{order: 3;}*/
+        
+    </style>
+</head>
+<body>
+    <div id ="main"> 
+        <div class="c01">1</div>
+        <div class="c02">2</div>
+        <div class="c03">3</div>
+        <div class="c04">4</div>
+        
+    </div>
+    
+</body>
+</html>
