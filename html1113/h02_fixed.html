@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0; margin: 0;}
+        .main{width: 600px; height: 2000px; border: 2px solid black;
+        margin-bottom: 200px; background: color greenyellow;}
+        .top{
+            position: fixed; right: 100px; bottom: 50px;
+            width: 50px; height: 50px; border: 1px solid black;
+            border-radius: 50%; text-align:  center;
+            line-height: 60px;
+            /*사각모델 그림자 생성*/
+            box-shadow: 0 0 10px 0 rgba(201,201,201,1);
+        }
+        video{width: 100%; height: 900px; object-fit: cover;}
+    </style>
+</head>
+<body>
+    <h2 id="top">메인페이지</h2>
+    <div class="main"></div>
+    <a href="#top">
+    <div class="top"><img src="/image/ico_top.svg"></div>
+    </a>
+    <video src="/image/WHY DO IT   NIKE.mp4" muted loop autoplay></video>
+</body>
+</html>
