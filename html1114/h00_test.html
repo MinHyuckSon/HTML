@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { padding: 0; margin: 0; }
+        ol, ul { list-style: none; }
+        a { text-decoration: none; color: inherit; }
+
+        header {
+            width: 100%;
+            height: 121px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        /*메인 툴*/
+        .menu {
+            width: 1290px;
+            height: 121px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        /*로고 이미지*/
+        .logo {
+            width: 132px;
+            height: 121px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 132px;
+            height: 45px;
+        }
+
+        nav {
+            width: 1158px;
+            height: 121px;
+        }
+
+        /*작은 메뉴*/
+        .t_menu {
+            height: 51px;
+        }
+
+        .t_menu ul {
+            height: 51px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 12px;
+            color: #8a8d8f;
+            font-weight: 400;
+        }
+
+        .t_menu ul li:after {
+            content: '|';
+            font-size: 10px;
+            display: inline-block;
+            color: #d3d3d3;
+            margin: 0 13px;
+        }
+
+        .t_menu ul li:last-child:after {
+            content: '';
+            margin: 0 0 0 13px;
+        }
+
+        /*메인 메뉴*/
+        .m_menu {
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .m_menu ul {
+            display: flex;
+        }
+
+        .m_menu li {
+            margin: 0 20px;
+        }
+
+        .m_menu li:last-child {
+            margin-right: 0;
+        }
+
+        /* 링크 기본 스타일 */
+        .m_menu li a {
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            color: inherit;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+
+        /* 글자 크기에 맞춰 밑줄 등장 */
+        .m_menu li a:hover {
+            color: #718929;
+            border-bottom: 2px solid #718929;
+        }
+
+        /*배너 이미지*/
+        .banner {
+            width: 100%;
+            height: 350px;
+            background: url('image/resom2.jpg');
+            background-size: cover; /*배경 이미지 크기 조정*/
+            color: white; /*배경 위의 글자 색을 하얀색으로*/
+            padding: 60px 30px;
+            text-align: left;
+        }
+
+        /*배너 텍스트 스타일*/
+        .banner h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 20px;
+            color: white;
+            line-height: 1.5;
+        }
+        /* 페이드인 애니메이션 */
+        @keyframes fadein {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 배너 텍스트 애니메이션 */
+        .banner h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+            animation: fadein 1.2s ease-out forwards;
+        }
+
+        .banner p {
+            font-size: 20px;
+            color: white;
+            line-height: 1.5;
+            animation: fadein 1.8s ease-out forwards;
+        }
+                
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <img src="../image/img_logo_re_forest.png" alt="Logo">
+            </div>
+            <nav>
+                <div class="t_menu">
+                    <ul>
+                        <li>회원예약</li>
+                        <li>패키지 예약</li>
+                        <li>부대시설 예약</li>
+                        <li>회원가입</li>
+                        <li id="end">로그인</li>
+                    </ul>
+                </div>
+                <div class="m_menu">
+                    <ul>
+                        <li><a href="">포레스트</a></li>
+                        <li><a href="">스파</a></li>
+                        <li><a href="">객실</a></li>
+                        <li><a href="">특별한 경험</a></li>
+                        <li><a href="">부대시설</a></li>
+                        <li><a href="">브랜드 소개</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="banner">
+        <h1>파노라마 숲에서 즐기는 프라이빗 스파</h1>
+        <p>
+            계절을 담은 숲이 나만의 정원이 됩니다.
+            <br>
+            자연과 함께하는 특별한 쉼을 경험해보세요.
+        </p>
+    </div>
+</body>
+</html>

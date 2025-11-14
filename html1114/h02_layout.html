@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VLAST Shop - 글쓰기</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="css/style2.css" rel="stylesheet" type="text/css"> 
+  <style>
+    *{padding: 0; margin: 0; box-sizing: border-box;}
+    /*{text-decoration: none; color}*/
+    .banner{width: 100%;height: 320px;background: url('image/resom2.jpg');}
+    .nav{width: 100%;height: 80px; border-bottom: 1px solid black;}
+    .nav ul{list-style: none; display: flex; 
+    width: 920px; height: 80px; margin: 0 auto;}
+    .nav ul li{width: 150px; height: 80px; font-size: 19px;font-weight: 500;
+    color:#1d1d1d;
+    letter-spacing: -0.5; line-height:  80px;
+    text-align: center;}
+    .nav ul li:nth-child(2){width: 80px;}
+    .nav ul li:nth-child(3){width: 100px;}
+    .nav ul li:hover{border-bottom: 5px solid #718929;
+    color:#718929}
+    .nav ul li a{display: inline-block; height:77px; color: #718929;}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="nav">
+            <ul>
+                <li><a herf=""></a>포레스트</li>
+                <li><a herf=""></a>스파</li>
+                <li><a herf=""></a>객실</li>
+                <li><a herf=""></a>특별한 경험</li>
+                <li><a herf=""></a>부대시설</li>
+                <li><a herf=""></a>브랜드 소개</li>
+            </ul>
+        </div> 
+
+    <div class="banner">
+        
+
+    </div>
+    
+    
+  <div class="header">
+    <div class="top-menu">
+      <a href="#">회원가입</a> |
+      <a href="#"><i class="fa fa-user-o" aria-hidden="true"x></i>로그인</a> |
+      <a href="#"><i class="fa fa-home" aria-hidden="true"></i>주문조회</a> |
+      <a href="#">최근본상품</a>
+    </div>
+   
+  </div>
+
+  <!-- 글쓰기 폼 -->
+  <div class="write-container">
+    <div class="write-title">게시글 작성</div>
+    <form class="write-form" id="writeForm">
+      <input type="text" id="writer" placeholder="작성자" maxlength="20" required />
+      <input type="text" id="title" placeholder="제목" maxlength="100" required />
+      <textarea id="content" placeholder="내용을 입력하세요." maxlength="2000" required></textarea>
+
+      <div class="write-buttons">
+        <button type="submit">등록</button>
+        <button type="button" class="cancel" onclick="history.back()">취소</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Copyright © VLAST Shop. All rights reserved.
+  </footer>
+
+  <script>
+    const writeForm = document.getElementById('writeForm');
+
+    writeForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const writer = document.getElementById('writer').value.trim();
+      const title = document.getElementById('title').value.trim();
+      const content = document.getElementById('content').value.trim();
+
+      if (!writer || !title || !content) {
+        alert('모든 항목을 입력해주세요.');
+        return;
+      }
+
+      // 이 부분에 서버로 데이터 전송 로직을 추가하거나 저장 기능 구현
+      alert('게시글이 등록되었습니다.');
+
+      // 예시: 목록 페이지로 이동
+      window.location.href = 'board.html';
+    });
+  </script>
+</body>
+</html>
