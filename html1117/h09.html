@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{border: 1px solid black; border-collapse: collapse; }
+        table{margin: 20px auto; text-align: center;}
+        th,td{width: 100px; height: 40px;}
+    </style>
+</head>
+<body>
+    <table>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    
+    
+    <script>
+        console.log(document.querySelector("#tbody"));
+        var tbody = document.querySelector("#tbody");
+        for(var i=1; i<=9; i++)
+        {
+          tbody.innerHTML = tbody.innerHTML+=`
+          <tr>
+                <td>
+          </tr>
+          `
+            for(var j=1; j<=9; j++){
+            tbody.innerHTML = tbody.innerHTML +`
+            <tr>
+                <td>${i}</td>
+                <td>x</td>
+                <td>${j}</td>
+                <td>=</td>
+                <td>${i*j}</td>
+            </tr>`;
+            }
+        }
+        //html 코드를 만들어서 innerHTML로 넣어야 함.
+    </script>
+
+
+
+    <script>
+       /* var sum = 0;
+        for(var i= 0; i<10; ++i)
+        {
+            sum+=i;
+        }
+
+        document.write("합계 : ",sum);
+        test();
+        
+        function test(){
+            var sum = 0;
+        for(var i = 0; i<=100; i++)
+        {
+            sum += i;
+
+            if(sum >= 100)
+            {
+            document.write(i,"번째 덧셈 결과값",sum,"<br>")
+            break;
+            }
+        }
+            
+    }*/
+    </script>
+
+
+
+
+
+</body>
+</html>

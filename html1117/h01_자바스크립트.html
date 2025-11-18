@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+    <!-- 자바스크립트 외부링크 -->
+    <script src="js/script.js">
+        
+    </script>
+    <style>    
+        *{margin:0; padding:0;}
+
+    </style>
+
+</head>
+<body>
+    <script>
+        /*document.write("안녕하세요")
+        document.write("<h1>안녕하세요</h1>")
+        //변수선언 ver, let 문자열, 숫자(정수, 실수), bool-boolean 
+        상수 선언 const
+        var num1 = 0;
+        var input = document.write(num+"<br>");
+        -타입확인
+         typeof()
+        -출력창
+        document.write("입력값 : ", input+"<br>");
+        -입력창
+        //prompt("입력창: 숫자를 입력하세요>> ")
+        -경고창
+        let result = confirm("1번게시글을 삭제하시겠습니까?");
+        document.write("결과: ",result);
+        console.log("콘솔창에 로그가 출력됨. document.write(): 화면에 출력됨.")
+        alert("경고창")*/
+        
+        //타입변경 : String(), Number(), Boolean()
+        //자바스크립트 특징 - 문자열숫자와 문자열 숫자를 *,-,/를 하면 자동형변환됨
+        //-더하기는 자동형 변환이 안되고 문자열로 인식됨.
+        //문자열 + 숫자 = 문자열 타입으로 변경됨.
+
+       /* var a = prompt("글자를 입력하세요.>>");
+        var b = prompt("글자를 입력하세요.>>");
+        document.write(typeof(a) , typeof(b)<"br>");
+        document.write(Number(a)+Number(b)); //1020
+        //문자열이라도 숫자이면 자동으로 형변환(*,-,/)*/
+
+        let a = 0, b=0;
+        a = prompt("첫번째 숫자를 입력하세요>>");
+        b = prompt("두번째 숫자를 입력하세요>>");
+
+        document.write("더하기" + (Number(a)+Number(b))+"<br>",
+                       "빼기" + (a-b)+"<br>",
+                       "곱하기" + (a*b)+"<br>",
+                       "나누기" + (a/b)+"<br>");
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*//문자열 숫자형 -> Number(),String(),Boolean()
+        //실수형에서 정수형 변환-> parseInt()
+        //정수형에서 실수형 변환-> parseFloat()
+        document.write((parseInt(math.random()*10)+1)+"<br>");
+        document.write((parseInt(math.random()*10)+1)+"<br>");
+        document.write((parseInt(math.random()*10)+1)+"<br>");
+        document.write((parseInt(math.random()*10)+1)+"<br>");
+        */
+        var rand = 0;
+        var iSelect = 0;
+        rand = parseInt(math.random()*100)+1
+        while(i<10)
+        {
+        iSelect = document(prompt("입력창: 숫자를 입력하세요>> "))
+        
+        if(rand == iSelect)
+        {
+        document.write(rand," 정답입니다.")
+        break;
+        }
+        else if(rnad<iSelect)
+        document.write(rand," 더 작은 수를 입력하세요")
+        else
+        document.write(rand," 더 큰 수를 입력하세요")
+
+        i++
+        }
+    </script>
+    
+</body>
+</html>

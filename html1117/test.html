@@ -1,0 +1,18 @@
+  <tbody id="tbody">
+        
+      </tbody>
+      <script>
+        //10번 반복 for문 i를 출력하시오.
+        var tbody = document.querySelector("#tbody");
+        for(var i=1;i<=10;i++){
+          tbody.innerHTML += `
+            <tr>
+              <td>${i}</td>
+              <td class="title"><a href="#">홈페이지 리뉴얼 오픈!</a></td>
+              <td>운영팀</td>
+              <td class="date">2025-08-10</td>
+              <td class="views">324</td>
+            </tr>
+          `;
+          console.log(i);
+        }
