@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>Document</title>
+    <script>
+        //기존태그를 가져와서 새로운 태그를 추가해서 다시 입력하는 형태
+        //append()-뒤에 추가 ,prepend()- 앞에 추가
+        //html():기존태그 삭제후 추가
+        $(function(){
+            $("#btn").click(()=>{
+                $("#fruit").val()
+                $("#u01").append(`<li>${$("#fruit").val()}</li>`);
+            });
+            /*
+            function btn(매개변수)
+            {
+
+            }
+            //js6버전 화살표함수
+            var btn1=()=>{
+
+            }*/
+        });
+    </script>
+</head>
+<body>
+    <input type="text" name ="fruit" id="fruit"><br>
+    <button type="button">저장</button>
+
+    <ul id="u01">
+        <li>바나나</li>
+        <li>딸기</li>
+    </ul>
+</body>
+</html>

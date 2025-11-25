@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //제이쿼리
+        //자바스크립트 - 명령어가 어려움.->jquery
+        $(function()
+        {
+            //이벤트에 관련된 사항은 이 구문안에 작성해야함
+            $("#txt").text("안녕");
+            console.log("이름 : ",$(".c").text());
+            $("#sno").val($(".c".text)); //input출력
+            console.log("이름 :",$("#name").val())//input출력, value
+            console.log($("p").text())
+            console.log($(".ul").html())
+        });
+    </script>
+    <div id="txt"></div>
+    <div class="c">고길동</div>
+    <ul>
+        <li>바나나</li>
+        <li>사과</li>
+
+    </ul>
+    <p>안녕하세요</p>
+    <input type="text" id="sno"><br>
+    <input type="text" id="name" value="유관순">
+</body>
+</html>
